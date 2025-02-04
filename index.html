@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonchon</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+        *
+        body {
+            font-family: "Noto Sans Thai", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        header {
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        header img {
+            max-height: 50px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            position: relative;
+            background: url('1.jpg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for text visibility */
+            z-index: 1;
+        }
+        .hero > div {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+        .hero .btn {
+            background-color: #d32f2f;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .hero .btn:hover {
+            background-color: #b71c1c;
+        }
+        .features {
+            background-color: #111;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .feature {
+            margin: 10px;
+            flex: 1 1 200px;
+        }
+        .feature img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #111;
+            color: #ccc;
+            text-align: center;
+            padding: 10px 20px;
+        }
+        .logonav {
+            width: 7vw;
+            object-fit: contain;
+        }
+        .recommended {
+            margin: 30px;
+            text-align: center;
+        }
+        .recommended-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .recommended-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+        .recommended-items img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="LOGO.png" class="logonav" alt="Bonchon Logo">
+        </div>
+           
+    </header>
+
+    <div class="hero">
+        <div>
+            <h1>ไก่ทอดบอนชอน สูตรใหม่</h1>
+            <p>เนื้อนุ่มขั้น ฉ่ำในขั้น แป้งบางกรอบ</p>
+            <button class="btn">#แจ้งเกิดไก่ใหม่</button>
+        </div>
+    </div>
+
+    <section class="features">
+        <div class="feature">
+            <a href="เมนูแนะนำ.html"><img src="3.jpg" alt="Marinated Chicken"></a>
+            <h3>เมนูแนะนำ</h3>
+        </div>
+        <div class="feature">
+            <a href="ของหวาน.html"><img src="4.jpg" alt="Frying Technique"></a>
+            <h3>ของหวาน</h3>
+        </div>
+        <div class="feature">
+            <a href="เมนูไก่.html"><img src="6.jpg" alt="Hand-Brushing"></a>
+            <h3>เมนูไก่</h3>
+        </div>
+        <div class="feature">
+            <a href="เครื่องดื่ม.html"><img src="7.jpg" alt="Hand-Brushing"></a>
+            <h3>เครื่องดื่ม</h3>
+        </div>           
+            <div class="feature">
+                <a href="ปลาทอด.html"><img src="9.jpg" alt="Hand-Brushing"></a>
+                <h3>ปลาทอดบอนชอน</h3>
+            </div>
+    </section>
+
+    <section class="features"> 
+        <h1>เมนูวันวาเลนไทน์</h1>
+        <p>🎂🍗 วาเลนไทน์นี้ ไม่มีดอกไม้พร้อมส่ง มีแต่ ซารางเฮเค้กไก่ทอดบอนชอน พร้อมเสิร์ฟ!! ใหม่! เค้กไก่รูปหัวใจสุดคิ้วท์ ขนาด 1 ปอนด์ ไก่ส่วนสะโพกจุกๆ เลือกรสชาติได้ทั้งซอยการ์ลิค หรือฮอท เพียง 499.-
+
+            ❤️ ซื้อได้แล้วที่บอนชอนทุกสาขา! จะโสด หรือมีคู่ ก็ต้องยกใจให้เมนูนี้
+            📅 ตั้งแต่ 11 ก.พ. 65 - 16 ก.พ. 65 เท่านั้น!</p>
+            <div class="recommended-items">
+                <img src="30.jpg" alt="Hand-Brushing">
+                <img src="31.jpg" alt="Hand-Brushing">
+                <img src="32.jpg" alt="Hand-Brushing">
+                <img src="33.jpg" alt="Hand-Brushing">
+            </div>
+
+
+
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Bonchon. All rights reserved.</p>
+    </footer>
+</body>
+</html>
